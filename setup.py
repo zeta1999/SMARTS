@@ -65,7 +65,7 @@ setup(
         "twisted",
     ],
     extras_require={
-        "train": ["tensorflow==1.15", "torch==1.3.0", "torchvision==0.4.1"],
+        "train": ["tensorflow==2.0", "torch==1.3.0", "torchvision==0.4.1"],
         "dev": ["black", "sphinx", "sphinx-rtd-theme", "sphinxcontrib-apidoc",],
     },
     entry_points={"console_scripts": ["scl=cli.cli:scl"]},
