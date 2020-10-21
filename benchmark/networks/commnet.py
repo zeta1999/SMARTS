@@ -96,7 +96,7 @@ class CommNet(TFModelV2):
                     c, (-1, self.agent_num, self.agent_num, self.rnn_hidden_dim)
                 )
                 c = tf.reduce_mean(
-                    c, axis=-2
+                    input_tensor=c, axis=-2
                 )  # (episode_num * max_episode_len, n_agents, rnn_hidden_dim)
                 h = tf.reshape(h, (-1, 1, self.rnn_hidden_dim))
                 c = tf.reshape(c, (-1, 1, self.rnn_hidden_dim))
