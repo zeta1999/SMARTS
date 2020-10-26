@@ -38,7 +38,7 @@ agent_list:
        Q_impatience: 0.2
 
 
-   - locator: zoo.open_agent.open_agent:open_agent-v0
+   - locator: zoo.policies.open-agent.open_agent:open_agent-v0
      name: open_agent_safe
      params:
         N: 10
